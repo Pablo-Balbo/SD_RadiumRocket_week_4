@@ -38,3 +38,13 @@ let firstWhiteSpace = theBeatles.indexOf(' ');
 console.log(firstWhiteSpace);
 
 // Create a string variable with at least 2 long words (10 characters and some space in between). Use the methods of the previous exercises to generate a new string that has the first letter of both words in uppercase and the other letters in lowercase (use indexOf, substring, toUpperCase, toLowerCase and the operator +).
+
+let biggestBrother = 'I am the biggest brother';
+
+let bOfBiggest = biggestBrother.substring(9,10).toUpperCase();
+let restOfFirstWord = biggestBrother.substring(10,16).toLowerCase();
+
+let bOfBrother = biggestBrother.substring(17,18).toUpperCase();
+let restOfSecondWord = biggestBrother.substring(18,24).toLowerCase();
+
+console.log('I am the ' + bOfBiggest + restOfFirstWord + ' ' + bOfBrother + restOfSecondWord);
