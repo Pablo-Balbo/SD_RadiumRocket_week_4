@@ -6,7 +6,10 @@ console.log(longString.toUpperCase());
 
 // Create a variable of type string with at least 10 characters and generate a new string with the first 5 characters, saving the result in a new variable (use substring).
 
+let seekAndDestroyString = 'We are scanning the scene in the city tonight';
+let subString = seekAndDestroyString.substring(0,5);
 
+console.log(subString);
 
 // Create a variable of type string with at least 10 characters and generate a new string with the last 3 characters, saving the result in a new variable (use substring).
 
