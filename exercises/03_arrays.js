@@ -6,7 +6,7 @@ console.log(array[4] + ' - ' + array[10]);
 
 // Sort the array of months alphabetically and display it by console (use sort).
 
-
+console.log(array.sort());
 
 // Add an element to the beginning and end of the array (use unshift and push).
 
