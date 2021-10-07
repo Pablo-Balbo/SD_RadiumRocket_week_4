@@ -20,7 +20,15 @@ console.log(substringLastCharacters);
 
 // Create a variable of type string with at least 10 characters and generate a new string with the first letter in uppercase and the others in lowercase. Save the result in a new variable (use substring, toUpperCase, toLowerCase, and the + operator).
 
+let vilasMovie = 'you will be what you should be of you will be nothing';
 
+let substringFirstLetter = vilasMovie.substring(0,1);
+let restOfSentence = vilasMovie.substring(1,53);
+
+let capitalize = substringFirstLetter.toUpperCase();
+let restOfSentenceLowercase = restOfSentence.toLowerCase();
+
+console.log(capitalize + restOfSentenceLowercase);
 
 // Create a variable of type string with at least 10 characters and some blank space. Find the position of the first whitespace and save it to a variable (use indexOf).
 
