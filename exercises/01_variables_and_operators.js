@@ -16,3 +16,14 @@ let completeString = firstString + secondString;
 
 console.log(completeString + '!!!');
 
+// Create two variables of type String and add the length of each variable (number of letters in the string), saving the result of the sum in a 3rd variable (use length).
+
+let firstVar = 'Radium';
+let secondVar = 'Rocket';
+
+let firstVarLength = firstVar.length;
+let secondVarLength = secondVar.length;
+
+let sumLength = firstVarLength + secondVarLength;
+
+console.log(sumLength);
