@@ -32,6 +32,9 @@ console.log(capitalize + restOfSentenceLowercase);
 
 // Create a variable of type string with at least 10 characters and some blank space. Find the position of the first whitespace and save it to a variable (use indexOf).
 
+let theBeatles = 'Yesterday, all my troubles seemed so far away';
+let firstWhiteSpace = theBeatles.indexOf(' ');
 
+console.log(firstWhiteSpace);
 
 // Create a string variable with at least 2 long words (10 characters and some space in between). Use the methods of the previous exercises to generate a new string that has the first letter of both words in uppercase and the other letters in lowercase (use indexOf, substring, toUpperCase, toLowerCase and the operator +).
