@@ -16,7 +16,9 @@ console.log(array);
 
 // Remove an element from the beginning and the end of the array (use shift and pop).
 
-
+array.shift('Turquía');
+array.pop(12);
+console.log(array);
 
 // Reverse the order of the array (use reverse).
 
