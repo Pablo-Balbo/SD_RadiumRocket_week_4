@@ -27,6 +27,6 @@ console.log(array);
 
 // Join all the elements of the array in a single string where each month is separated by a hyphen - (use join).
 
-
+console.log(array.join(' - '));
 
 // Create a copy of the array of months that contains from May to November (use slice).
