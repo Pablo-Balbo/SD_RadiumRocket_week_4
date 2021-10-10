@@ -10,7 +10,9 @@ console.log(array.sort());
 
 // Add an element to the beginning and end of the array (use unshift and push).
 
-
+array.unshift('Turquía');
+array.push('Barcelona');
+console.log(array);
 
 // Remove an element from the beginning and the end of the array (use shift and pop).
 
