@@ -38,7 +38,15 @@ console.log(mySumWithValidationTest4);
 
 // Create a validate integer function that takes a number as a parameter and returns true if it is an integer.
 
+function validateInteger(num) {
+    if(Number.isInteger(num)){
+        return true;
+    } else {
+        return false;
+    }
+}
 
+console.log(validateInteger(3));
 
 // To the sum function of exercise 6b) add a call that validates that the numbers are integers. In case there are decimals, show an alert with the error and return the number converted to integer (rounded).
 
