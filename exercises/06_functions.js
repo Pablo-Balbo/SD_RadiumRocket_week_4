@@ -1,22 +1,20 @@
 // Create a sum function that receives two numeric values ​​and returns the result. Execute the function and save the result in a variable, showing the value of said variable in the browser console.
 
-const number1 = 6;
-const number2 = 8;
-
-function sumFunction() {
-    result = number1 + number2;
+function sumFunction(num1, num2) {
+    result = num1 + num2;
     return result;
 }
 
-let sumResult = sumFunction();
+let sumResult = sumFunction(6, 8);
 console.log(sumResult);
 
 // To the previous sum function, add a validation to control if any of the parameters is not a number, show an alert clarifying that one of the parameters has an error and return the NaN value as a result.
 
-// if(){
+// if(isNaN(num1)){
 //    alert('One of the parameters has an error');
-//    return  
-// }
+// } else if(isNaN(num2)){
+//     alert('One of the parameters has an error');
+// } 
 
 // Create a validate integer function that takes a number as a parameter and returns true if it is an integer.
 
