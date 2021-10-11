@@ -38,18 +38,45 @@ console.log(mySumWithValidationTest4);
 
 // Create a validate integer function that takes a number as a parameter and returns true if it is an integer.
 
-function validateInteger(num) {
-    if(Number.isInteger(num)){
-        return true;
-    } else {
-        return false;
-    }
+function validateInteger(num) {    
+    return Number.isInteger(num);
 }
 
+// ---------------Tests---------------
+
 console.log(validateInteger(3));
+console.log(validateInteger(1.5));
 
 // To the sum function of exercise 6b) add a call that validates that the numbers are integers. In case there are decimals, show an alert with the error and return the number converted to integer (rounded).
 
+function mySumWithIntegerValidation(num1, num2) {
+    if(isNaN(num1)) {
+        alert('First value is not a number');
+        return num1;
+    } else if(isNaN(num2)) {
+        alert('Second value is not a number');
+        return num2;
+    }
 
+    if(!validateInteger(num1)) {
+        alert('First value is not an integer');
+        num1 = Math.round(num1);
+        console.log(num1);
+    }
+    if(!validateInteger(num2)) {
+        alert('Second value is not an integer');
+        num2 = Math.round(num2);
+        console.log(num2);
+    }
+
+    let result = num1 + num2;
+    return result;
+}
+
+// ---------------Tests---------------
+
+console.log('mySumWithIntegerValidation(3, 9.3) -> ' + mySumWithIntegerValidation(3, 9.3));
+console.log('mySumWithIntegerValidation(4.5, 16) -> ' + mySumWithIntegerValidation(4.5, 16));
+console.log('mySumWithIntegerValidation(23.4, 18.9) -> ' + mySumWithIntegerValidation(23.4, 18.9));
 
 // Convert the validation of exercise 6b) into a separate function and call it within the sum function, testing that everything continues to work the same.
