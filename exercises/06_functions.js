@@ -79,4 +79,41 @@ console.log('mySumWithIntegerValidation(3, 9.3) -> ' + mySumWithIntegerValidatio
 console.log('mySumWithIntegerValidation(4.5, 16) -> ' + mySumWithIntegerValidation(4.5, 16));
 console.log('mySumWithIntegerValidation(23.4, 18.9) -> ' + mySumWithIntegerValidation(23.4, 18.9));
 
-// Convert the validation of exercise 6b) into a separate function and call it within the sum function, testing that everything continues to work the same.
+// Convert the validation of exercise 6d) into a separate function and call it within the sum function, testing that everything continues to work the same.
+
+function transformToArrayOfIntegers(num1, num2) {
+    let arrayOfNumbers = [];
+    if(!validateInteger(num1)) {
+        alert('First value is not an integer');
+        arrayOfNumbers.push(Math.round(num1));
+    } else {
+        arrayOfNumbers.push(num1);
+    }
+
+    if(!validateInteger(num2)) {
+        alert('Second value is not an integer');
+        arrayOfNumbers.push(Math.round(num2));
+    } else {
+        arrayOfNumbers.push(num2);
+    }
+    return arrayOfNumbers;
+}
+
+function myNewSum(num1, num2) {
+    if(isNaN(num1)) {
+        alert('First value is not a number');
+        return num1;
+    } else if(isNaN(num2)) {
+        alert('Second value is not a number');
+        return num2;
+    }
+
+    let myArray = transformToArrayOfIntegers(num1, num2);
+    return myArray[0] + myArray[1];
+}
+
+// ---------------Tests---------------
+
+console.log('myNewSum(3, 9.3) -> ' + myNewSum(3, 9.3));
+console.log('myNewSum(4.5, 16) -> ' + myNewSum(4.5, 16));
+console.log('myNewSum(23.4, 18.9) -> ' + myNewSum(23.4, 18.9));
