@@ -5,6 +5,7 @@
 This is the report from the Radium Rocket Software Developer course corresponding to week 4.
 During this week, we begin to study JavaScript.
 The objective was to create an .html file where you can link different .js files, which contain the statements and resolutions of the exercises.
+To correctly view the results of the exercises, I recommend opening the browser console before starting, or reloading the page once it is open.
 
 ---
 
