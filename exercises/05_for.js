@@ -1,6 +1,6 @@
 // Create an array containing 5 words and loop through the array using a JavaScript for loop to display an alert using each word.
 
-let forArray = ['football', 'basquetball', 'tennis', 'swimming', 'judo'];
+const forArray = ['football', 'basquetball', 'tennis', 'swimming', 'judo'];
 
 for(i = 0; i < 5; i++){
     alert(forArray[i]);

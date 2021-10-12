@@ -18,20 +18,20 @@ console.log(number);
     // - “Senior adult” between 61 and 75 years old;
     // - "Elderly" if you are older than 75 years.
 
-let age = Math.random() * (101 - 0) + 0;
+let age = Math.random() * (101);
 
 if(age < 2){
-    alert('Baby')
-} else if(age < 2 && age < 12){
-    alert('Child')
-} else if(age < 13 && age < 19){
-    alert('Adolescent')
-} else if(age < 20 && age < 30){
-    alert('Young')
-} else if(age < 31 && age < 60){
-    alert('Adult')
-} else if(age < 61 && age < 75){
-    alert('Senior adult')
+    alert(age + ' - Baby')
+} else if(age < 12){
+    alert(age + ' - Child')
+} else if(age < 19){
+    alert(age + ' - Adolescent')
+} else if(age < 30){
+    alert(age + ' - Young')
+} else if(age < 60){
+    alert(age + ' - Adult')
 } else if(age < 75){
-    alert('Elderly')
+    alert(age + ' - Senior adult')
+} else {
+    alert(age + ' - Elderly')
 };
